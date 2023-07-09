@@ -1,0 +1,16 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  labels:
+    app: httpd-ex
+  name: http
+  namespace: demo-openshift-gitops-001
+spec:
+  host: http-demo-openshift-gitops-001.apps.cluster-4qcqf.4qcqf.sandbox2646.opentlc.com
+  port:
+    targetPort: 8080-tcp
+  to:
+    kind: Service
+    name: httpd-ex
+    weight: 100
+  wildcardPolicy: None
