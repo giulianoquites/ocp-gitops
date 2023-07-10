@@ -6,7 +6,7 @@ metadata:
   name: http
   namespace: demo-openshift-gitops-001
 spec:
-  host: http-demo-openshift-gitops-001.apps.cluster-4qcqf.4qcqf.sandbox2646.opentlc.com
+  host: htttp-demo-openshift-gitops-001.apps.cluster-4qcqf.4qcqf.sandbox2646.opentlc.com
   port:
     targetPort: 8080-tcp
   to:
